@@ -87,6 +87,17 @@ window.SQUIGGLE_PUBS = {
     },
     {
       "year": 2025,
+      "authors": "Suess et al.",
+      "title": "Cold Gas in a Post-Starburst Pair at z ~ 1.4: Major Mergers as a Pathway to Quenching in the HeavyMetal Survey",
+      "teaser": "A molecular gas detection in a serendipitous post-starburst pair at z ~ 1.4, highlighting the importance of major mergers in regulating molecular gas content.",
+      "ads":    "https://ui.adsabs.harvard.edu/abs/2025ApJ...993..158S/abstract",
+      "arxiv":  "https://arxiv.org/abs/2506.14361",
+      "thumb":  "suess_2025.png",
+      "themes": ["gas", "struct"],
+      "tags":   ["Cold gas", "Mergers"]
+    },
+    {
+      "year": 2025,
       "authors": "Zhu et al.",
       "title": "Low Ongoing Star Formation Rates in Gas-Rich Post-Starburst Galaxies",
       "teaser": "Multi-tracer SFR limits confirm that the lingering molecular gas in SQuIGGLE post-starbursts is not forming stars at the expected rate.",
