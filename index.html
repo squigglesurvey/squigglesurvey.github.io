@@ -90,6 +90,12 @@
         <div class="role">Professor · Zürich</div>
       </div>
 
+      <div class="member" data-role="grad">
+        <div class="photo"><img src="images/geiger.png" alt=""></div>
+        <div class="name">Alex Geiger</div>
+        <div class="role">Grad Student · Texas A&amp;M</div>
+      </div>
+
       <div class="member" data-role="faculty">
         <a href="https://www.astro.princeton.edu/~goulding/index.html" target="_blank" rel="noopener"><div class="photo"><img src="images/andy.jpeg" alt=""></div></a>
         <div class="name"><a href="https://www.astro.princeton.edu/~goulding/index.html" target="_blank" rel="noopener">Andy Goulding</a></div>
@@ -225,7 +231,6 @@
       var thumbClass = p.thumb ? 'thumb' : 'thumb pending';
       var links = [];
       if (p.ads)   links.push('<a href="' + esc(p.ads) + '" target="_blank" rel="noopener">ADS</a>');
-      if (p.arxiv) links.push('<a href="' + esc(p.arxiv) + '" target="_blank" rel="noopener">arXiv</a>');
       var tags = (p.tags || []).map(function(t) {
         return '<span class="tag">' + esc(t) + '</span>';
       }).join('');
@@ -237,8 +242,10 @@
           '<div class="meta-line"><span class="year">' + esc(p.year) + '</span><span>' + esc(p.authors) + '</span></div>' +
           '<h3><a href="' + esc(primary) + '" target="_blank" rel="noopener">' + esc(p.title) + '</a></h3>' +
           (p.teaser ? '<p class="teaser">' + esc(p.teaser) + '</p>' : '') +
-          (links.length ? '<div class="links">' + links.join(' · ') + '</div>' : '') +
-          (tags ? '<div class="tags">' + tags + '</div>' : '') +
+          ((links.length || tags) ? '<div class="meta-row">' +
+            (links.length ? '<div class="links">' + links.join(' · ') + '</div>' : '') +
+            (tags ? '<div class="tags">' + tags + '</div>' : '') +
+            '</div>' : '') +
         '</div>' +
         '</article>';
     }).join('');

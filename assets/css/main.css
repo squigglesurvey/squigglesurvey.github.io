@@ -272,7 +272,8 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 32px; }
   letter-spacing: 0.14em;
   font-weight: 600;
 }
-.pub .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+.pub .meta-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.pub .tags { display: flex; gap: 6px; flex-wrap: wrap; }
 .pub .tag {
   font-size: 10.5px;
   text-transform: uppercase;
